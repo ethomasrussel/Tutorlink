@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+<h2>Messages</h2>
+<% @messages.each do |message| %>
+  <div class=card-deck>
+    <div class="card">
+      <img class="card-img-top" src="..." alt="">
+      <div class="card-header">
+        Subj: <%= message.subject %><br>
+        From: <%= link_to message.sender %>
+      </div>
+      <div class="card-body">
+        <p> <%= message.content %> </p>
+      <div class="card-footer">
+        <div class="inlinebuttons">
+          <%= button_to "Show", message, method: :get, class: "btn btn-primary btn-sm" %>
+          <%= button_to "Edit", edit_message_path(message), method: :get, class: "btn btn-primary btn-sm" %>
+          <%= button_to "Delete", message, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-primary btn-sm" %>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+<% end %>

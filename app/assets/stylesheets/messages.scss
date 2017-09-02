@@ -1,0 +1,75 @@
+// Place all the styles related to the Messages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.flex-container{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.card-deck{
+  height: 170px;
+}
+
+.card{
+  border: 1px solid gray;
+  border-radius: 8px;
+  width: 15em;
+  padding: 1px
+
+}
+.card-body{
+  left-margin: 2px;
+  bottom-margin: 5px;
+  max-height: 120px;
+  min-height: 70px;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+  overflow: scroll;
+}
+.inline{
+  display: inline-block;
+  margin-left: 5px;
+}
+.card-header
+{
+  background-color: white;
+  margin: -2;
+  padding: 0.5px;
+  border-top: solid gray 1px;
+  border-bottom: solid gray 1px;
+}
+
+.card-footer{
+  background-color: #F5F5F5;
+  margin: 0,-2, 2, -2;
+  padding: 0.5px;
+  list-style: none;
+  border-top: solid gray 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  min-height: 50px;
+
+}
+.inlinebuttons{
+  line-height: 2;
+  vertical-align: middle;
+  display: flex;
+}
+.large-card{
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 1px;
+}
+.large-card-body{
+  left-margin: 2px;
+  bottom-margin: 5px;
+  min-height: 70px;
+  min-width: 400px;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: white;
+}
